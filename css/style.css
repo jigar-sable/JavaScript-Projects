@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --violet: #5320e0;
+}
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+*::selection{
+    background: var(--violet);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: rgb(102, 102, 102);
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(62, 4, 155);
+}
+
+body{
+    background: #f9f9f9;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 7%;
+}
+.heading{
+    font-size: 3.5rem;
+    color: rgb(48, 48, 48);
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+.heading span{
+    color: rgb(115, 3, 167);
+}
+
+header{
+    width: 100%;
+    background: rgb(62, 4, 155);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    padding: .8rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo{
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .2s;
+}
+header .logo i{
+    color: #ffd900;
+}
+header .logo:hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header .navbar ul li{
+    margin-left: 2.5rem;
+}
+header .navbar ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color: rgb(255, 230, 0);
+    border-bottom: .2rem solid rgb(255, 230, 0);
+    padding: .7rem 0;
+}
+#menu{
+    font-size: 3rem;
+    color: rgb(255, 208, 1);
+    cursor: pointer;
+    display: none;
+}
+header a.conbtn{
+    background: #fff;
+    border-radius: 1rem;
+    padding: 8px 20px;
+    font-size: 1.8rem;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: rgb(62, 4, 155);
+    text-decoration: none;
+}
+header a.conbtn:hover{
+    color: rgb(62, 4, 155);
+    background: rgb(255, 230, 0);
+}
+
+/* hero */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: url("../assests/hero-bg.png") no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    background-position: center;
+}
+.home .content{
+    flex: 1 1 40rem;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 90%;
+    padding: 1rem;
+    animation: float 4s linear infinite;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+.home .content h3{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #012970;
+    font-family: 'Nunito', sans-serif;
+}
+.home .btn {
+    font-family: 'Nunito', sans-serif;
+    line-height: 0;
+    padding: 1.7rem 3rem;
+    border-radius: 4em;
+    transition: 0.5s;
+    color: #fff;
+    background: #7115eb;
+    box-shadow: 0px 5px 30px rgba(109, 39, 238, 0.6);
+}
+.home .btn span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+.home .btn i {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.home .btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* text anim */
+#container {
+	text-align: left;
+    position: relative;
+}
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: orange;
+	letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 2rem;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: center;
+	width: 3px;
+	height: 3rem;
+	background-color: orange;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: orange; 
+	}
+}
+
+
+/* hero end */
+
+/* project section starts */
+.project{
+    background: #e5ecfb;
+}
+.project .heading{
+    text-align: center;
+    padding: 2rem;
+    font-weight: 600;
+}
+.project .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project .box-container .box{
+    border: .1rem solid rgba(0, 0, 0, .1);
+    margin: 2rem;
+    width: 33rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 52rem;
+    background: #fff;
+}
+.project .box-container .box img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.project .box-container .box .content{
+    position: relative;
+    padding: 1.5rem;
+    text-align: center;
+}
+.project .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #012970;
+    padding: .5rem 0;
+    font-weight: 600;
+}
+.project .box-container .box .content p{
+    font-size: 1.4rem;
+    color: rgb(122, 122, 122);
+    padding: .5rem;
+}
+.project .box-container .box:hover{
+    transform: translateY(-1rem);
+}
+
+.btns{
+    display: block;
+    padding: 1.5rem;
+    justify-content:center;
+    align-items: center;
+}
+.btns .btn{
+    font-family: 'Nunito', sans-serif;
+    line-height: 0;
+    display: inline;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #4225c7f5;
+    margin-right: 2rem;
+}
+.btn:hover{
+    background: #6547e9f5;
+}
+/* project section ends */
+
+
+
+/* media queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px){
+    #menu{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: 5.4rem; right: -120%;
+        width: 70%;
+        height: 100%;
+        text-align: left;
+        align-items: flex-start;
+        background-color: rgb(32, 32, 32);
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem;
+    }
+    header .navbar ul li{
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+        border-bottom: 3px solid yellow;
+        border-radius: .5rem;
+        width: 22rem;
+    }
+    header .navbar ul li a{
+        display: block;
+        padding: 1rem;
+        text-align: left;
+    }
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover{
+        padding: 1rem;
+        background: var(--violet);
+        color: #fff;
+        border-radius: .5rem;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .navbar.nav-toggle{
+        right: 0;
+    }
+    header a.conbtn{
+        margin-top: 1rem;
+        width: 100%;
+        margin-left: -1rem;
+        text-align: center;
+    }
+    .home .content{
+        text-align: center;
+    }
+    .prevent .row:last-child{
+        flex-flow: column-reverse;
+    }
+    .project .heading {
+        padding: .5rem;
+    }
+    #container{
+        text-align: center;
+    }
+}
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding: 0 3%;
+        padding-top: 9rem;
+    }
+}
+
+
+
+/* Footer  */
+.site-footer {
+    background-color:#08142c;
+    padding:30px 0 10px;
+    font-size:15px;
+    line-height:20px;
+    color:rgb(209, 203, 203);
+  }
+  .site-footer .social-icons {
+    text-align:right
+  }
+  .site-footer .social-icons a {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#fdfdfd
+  }
+  .copyright-text {
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+  }
+  @media (max-width:991px) {
+    .site-footer [class^=col-]  {
+      margin-bottom:30px
+    }
+  }
+  @media (max-width:767px) {
+    .site-footer   {
+      padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons  {
+      text-align:center
+    }
+  }
+  .social-icons {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+  }
+  .social-icons li {
+    display:inline-block;
+    margin-bottom:14px
+  }
+  .social-icons li.title {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#171718;
+    font-weight:700;
+    font-size:18px
+  }
+  .social-icons a {
+    background-color:#eceeef;
+    color:#1b1b1b;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+    color:#fff;
+    background-color:#29aafe
+  }
+  .social-icons.size-sm a {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+  }
+  .social-icons a.facebook:hover {
+    background-color:#3b5998
+  }
+  .social-icons a.twitter:hover {
+    background-color:#00aced
+  }
+  .social-icons a.linkedin:hover {
+    background-color:#007bb6
+  }
+  .social-icons a.youtube:hover {
+      background-color:#e60606
+  }
+  .social-icons a.instagram:hover {
+      background-color:#b8046d
+  }
+  @media (max-width:767px){
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
+  @media(max-width:450px){
+    .site-footer p span{
+      left: 50%;
+      top: 120%;
+    }
+  }
+  /* Footer  */
+
+
+  /* footer made with love */
+.site-footer span{
+  color: rgb(177, 174, 174);
+  font-size: 1.3rem;
+  display: block;
+  position: absolute;
+  left: 80%;
+  top: 35%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+.site-footer span a{
+  text-decoration: none;
+}
+.site-footer .fa{
+    color: #E90606;
+    margin: 0 .3rem;
+    font-size: 1.1rem;
+    animation: pound .35s infinite alternate;
+}
+@-webkit-keyframes pound{
+  to{
+    transform: scale(1.1);
+  }
+}
+@keyframes pound{
+  to{
+    transform: scale(1.1);
+}
+}
+/* footer made with love */
