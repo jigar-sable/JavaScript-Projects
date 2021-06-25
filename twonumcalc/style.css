@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    font-size: 62.5%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+body, button, input {
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+.container {
+    flex: 0 1 30rem;
+    margin: auto;
+    padding: 1rem;
+}
+.screen {
+    position: relative;
+    background: rgba(240, 240, 240);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.screen-body{
+    flex: 1;
+    padding: 1rem 3rem 3rem 3rem; 
+}
+h3 {
+    text-align: center;
+    color: #2f019b;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.form-control {
+    width: 100%;
+    padding: .5rem;
+    background: #4f25e4;
+    border: none;
+    border-bottom: 2px solid rgb(245, 180, 1);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border-color .2s;
+    border-radius: .2rem;
+    letter-spacing: .1rem;
+}
+.form-control::placeholder {
+    font-size: .8rem;
+    color: rgb(224, 223, 223);
+}
+.form-control:focus {
+    border-bottom-color: rgb(238, 27, 27);
+}
+.showdata{
+    text-align: center;
+    color: rgb(44, 0, 80);
+    font-size: 1.2rem;
+    padding: 0 1rem 1.5rem 1rem;
+}
+.options select{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #333;
+    border-radius: .2rem;
+}
+.submitbtn{
+    margin-top: 2rem;
+    text-align: center;
+}
+#submit {
+    line-height: 0;
+    padding: 1rem 1rem;
+    border-radius: .5em;
+    transition: 0.5s;
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+    background: #ffa600;
+}
+#submit:hover{
+    background: #e79702;
+}
+#submit span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+#submit i {
+    margin-left: 0.2rem;
+    font-size: .8rem;
+    transition: 0.3s;
+}
+#submit:hover i {
+    transform: translateX(5px);
+}
+
+
+.backbtn {
+    position: absolute;
+    font-size: 2rem;
+    float: left;
+    cursor: pointer;
+    top: 3rem;
+    margin-left: 10rem;
+    color:rgb(255, 255, 255);
+}
+.backbtn a{
+    text-decoration: none;
+    color: inherit;  
+}

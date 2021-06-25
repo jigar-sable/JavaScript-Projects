@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="backbtn">
+    <a href="/JavaScript-Projects/#project"><i class="fas fa-arrow-circle-left"></i></a>    
+  </div>
+  <div class="container">
+    <div class="screen">
+        <h3>JavaScript 2 Num Calc</h3>
+        <div class="screen-body">
+          <div class="app-form">
+            <label> Number 1 :</label>
+              <input type="text" class="form-control" placeholder="Enter Number" id="num1">
+            <label> Number 2 :</label>
+              <input  type="text"  class="form-control"  placeholder="Enter Number" id="num2">
+            <div class="options">
+              <label> Choose Operation :</label>
+              <select id="operations">
+                <option value="add">ADDITION</option>
+                <option value="sub">SUBTRACTION</option>
+                <option value="mult">MULTIPLICATION</option>
+                <option value="div">DIVISION</option>
+              </select>
+            </div>
+            <div class="submitbtn"> 
+              <a id="submit" onclick="calc()"><span>Result</span>
+                <i class="fas fa-arrow-circle-right"></i>
+              </a>
+            </div>         
+          </div>
+      </div>
+      <div class="showdata">
+        <p id="resdata"></p>
+     </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

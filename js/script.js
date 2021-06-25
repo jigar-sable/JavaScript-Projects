@@ -39,6 +39,7 @@ $(document).ready(function(){
     })
 });
 
+// work in progressssss....
 /**
    * Animation on scroll
    */
@@ -57,10 +58,12 @@ $(document).ready(function(){
 
 
 // text animation
-var _CONTENT = [ 
-	"Build a JavaScript Clock.", 
+var _CONTENT = [  
 	"Build a JavaScript Calculator.", 
-	"Build a JavaScript Todo List.", 
+	"Build a JavaScript Todo List.",
+    "Build a JavaScript Age Calculator.", 
+    "Build a JavaScript Clock.",
+    "Build a JavaScript Issue Tracker.",
 	"Build a JavaScript Password Generator.",
     "So Let's Get Started!"
 ];
