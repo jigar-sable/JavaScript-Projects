@@ -293,6 +293,26 @@ header a.conbtn:hover{
 }
 /* project section ends */
 
+/* basic section starts */
+.basic{
+    min-height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+}
+.basic img{
+    width: 60%;
+    height: 100%;
+    padding: 5rem;
+}
+
+
+
+
+/* basic section ends */
+
+
 
 
 /* media queries */
