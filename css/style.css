@@ -23,10 +23,10 @@ html{
     overflow-x: hidden;
 }
 html::-webkit-scrollbar{
-    width: 1rem;
+    width: .7rem;
 }
 html::-webkit-scrollbar-track{
-    background: rgb(102, 102, 102);
+    background: rgb(175, 175, 175);
 }
 html::-webkit-scrollbar-thumb{
     background: rgb(62, 4, 155);
@@ -271,13 +271,13 @@ header a.conbtn:hover{
     transform: translateY(-1rem);
 }
 
-.btns{
+.project .btns{
     display: block;
     padding: 1.5rem;
     justify-content:center;
     align-items: center;
 }
-.btns .btn{
+.project .btns .btn{
     font-family: 'Nunito', sans-serif;
     line-height: 0;
     display: inline;
@@ -288,25 +288,93 @@ header a.conbtn:hover{
     background: #4225c7f5;
     margin-right: 2rem;
 }
-.btn:hover{
+.project .btn:hover{
     background: #6547e9f5;
 }
 /* project section ends */
 
 /* basic section starts */
 .basic{
-    min-height: 60vh;
-    margin: 0 auto;
+    background: #e5ecfb;
+    padding-bottom: 2rem;
+}
+.basic .heading{
+    text-align: center;
+    padding: 2rem;
+    font-weight: 600;
+}
+.basic .box-container{
     display: flex;
-    background: #fff;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.basic img{
-    width: 60%;
-    height: 100%;
-    padding: 5rem;
+.basic .box-container .box{
+    display: flex;
+    flex-direction: row;
+    max-width: 90rem;
+    border-radius: .5rem;
+    box-shadow: .2rem .5rem 1rem rgba(0, 0, 0, .2);
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    overflow: hidden;
+    transition: .3s;
+    background: rgb(252, 252, 252);
 }
-
+.basic .box-container .box:hover{
+    transform: scale(1.03);
+    box-shadow: 1rem .5rem 1.2rem rgba(0, 0, 0, .3);
+}
+.basic .box-container .box .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.basic .box-container .box img{
+    object-fit: cover;
+    position: relative;
+    width: 22%;
+}
+.basic .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #012970;
+    padding: .5rem 0;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 2rem;
+}
+.basic .box-container .box .content p{
+    font-size: 1.4rem;
+    color: rgb(70, 70, 70);
+    padding: .5rem;
+    margin-left: 1.5rem;
+    text-align: left;
+}
+.basic .btns{
+    display: flex;
+    padding: 1.5rem;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.basic .btns .btn{
+    font-family: 'Nunito', sans-serif;
+    line-height: 0;
+    display: inline;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: rgb(14, 14, 14);
+    margin-right: 2rem;
+    border: 2px solid #4225c7f5;
+}
+.basic .btn:hover{
+    background: #4225c7f5;
+    color: #fff;
+}
 
 
 
@@ -379,8 +447,35 @@ header a.conbtn:hover{
     .project .heading {
         padding: .5rem;
     }
+    .project .box-container .box{
+        width: 37rem;
+        height: 48rem;
+    }
     #container{
         text-align: center;
+    }
+    .basic .box-container .box{
+        max-height: 22rem;
+    }
+    .basic .box-container .box img{
+        object-fit: cover;
+        width: 40%;
+    }
+    .basic .box-container .box .content h3{
+        font-size: 1.8rem;
+        padding: .2rem 0;
+        margin-left: .2rem;
+    }
+    .basic .box-container .box .content p{
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+    .basic .btns{
+        padding: .5rem;
+    }
+    .basic .btns .btn{
+        padding: .8rem;
     }
 }
 
