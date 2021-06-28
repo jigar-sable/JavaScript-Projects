@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nutino', sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  overflow: hidden;
+}
+.container {
+  background: rgba(190, 183, 183, 0.4);
+  transform-style: preserve-3d;
+  transition: .3s;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  max-width: 23rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+}
+.container h2{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+input[type="text"] {
+  height: 60px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  color: rgb(12, 12, 12);
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 20px;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+form .btns {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+input[type="button"] {
+  width: 58px;
+  height: 55px;
+  margin: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  background: #fdfdfd;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+input[type="button"]:hover {
+  transition: 0.5s;
+  background: linear-gradient(#b8df0b, #18e65d);
+}
+input#clear {
+  background: #e20404;
+  border: none;
+  transition: .2s;
+  color: white;
+}
+input#clear:hover{
+  transform: scale(1.05);
+  background: #bd0303;
+}
+input#equal {
+  width: 275px;
+  margin: 10px 0 10px 0;
+  font-size: 30px;
+  color: white;
+  background: #ff7c01;
+  border: none;
+  transition: all .2s;
+}
+input#equal:hover{
+  transform: scale(1.05);
+  background: #df6d03;
+}
+
+@media (max-width:360px){
+  .container{
+    width: 20rem;
+    padding: .5rem;
+  }
+}
