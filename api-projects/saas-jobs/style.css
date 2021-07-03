@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    margin: 0;
+    color: #fff;
+    background: #11121A;
+}
+
+header {
+    background: #1C1C24;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: fixed;
+    left: 0; right: 0;
+    top: 0;
+    z-index: 10;
+}
+.header-container {
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+.header-container .logo {
+    height: 60px;
+    margin-right: 10px;
+}
+.header-container .logo img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.search {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+    margin-top: 90px;
+}
+.search-container {
+    background: #1C1C24;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #222328;
+    display: flex;
+    overflow: hidden;
+}
+.input-container{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.input-container input{
+    flex-grow: 1;
+    background: transparent;
+    border: none; outline: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.input-container i {
+    font-size: 20px;
+    margin-left: 25px;
+}
+.button-container{
+    background: #5513cf;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.button-container:hover{
+    background: #3d03a8;
+}
+
+.jobs-list{
+    background: #11121A;
+    max-width: 1250px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+.jobs-list h1{
+    margin-left: 25px;
+    font-size: 20px;
+}
+.jobs-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    background: #11121A;
+}
+.job-tile{
+    background: #1C1C24;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+    padding: 30px;
+    transition: transform 0.2s;
+}
+.job-tile:hover {
+    transform: scale(1.05);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.top img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.rolename {
+    padding: 20px 0;
+}
+.rolename span {
+    font-size: 22px;
+}
+.description {
+    height: 105px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #969398;
+    flex-grow: 1;
+}
+.buttons {
+    color: #000;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+.button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #030303;
+    background: #ff8800;
+    font-size: 14px;
+    cursor: pointer;
+}
+.button:hover {
+    background: #df7802;
+}
+.apply-now{
+    color: #fff;
+    background: #550ddb;
+    margin-right: 15px;
+    transition: .2s;
+}
+.apply-now i{
+    font-size: 11px;
+    margin-left: 2px;
+}
+.apply-now a{
+    text-decoration: none;
+    color: #fff;
+}
+.apply-now:hover {
+    background: #4409b1;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 930px){
+    .jobs-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .jobs-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #aa076b, #61045f);
+}
+.emoji{
+    font-size: 20rem;
+    cursor: pointer;
+    user-select: none;
+}
+.closed{
+    display: none;
+}
+.open{
+    display: none;
+}
+.active{
+    display: block;
+}
