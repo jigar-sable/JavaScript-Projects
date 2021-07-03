@@ -16,4 +16,5 @@ button {
     border-radius: .5rem;
     background: #fff;
     border: none; outline: none;
+    cursor: pointer;
 }
