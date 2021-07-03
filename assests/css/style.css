@@ -475,7 +475,7 @@ header a.conbtn:hover{
 /* media queries */
 @media (max-width:991px){
     html{
-        font-size: 55%;
+        font-size: 60%;
     }
 }
 @media (max-width:768px){
@@ -484,7 +484,7 @@ header a.conbtn:hover{
     }
     header .navbar{
         position: fixed;
-        top: 5.4rem; right: -120%;
+        top: 5.3rem; right: -120%;
         width: 70%;
         height: 100%;
         text-align: left;
@@ -530,6 +530,10 @@ header a.conbtn:hover{
     .home .content{
         text-align: center;
     }
+    .home .image img{
+        position: absolute;
+        top: 60%;
+    }
     .project .heading {
         padding: .5rem;
     }
@@ -538,16 +542,22 @@ header a.conbtn:hover{
         height: 46rem;
         margin: 1rem;
     }
+    .project .box-container .box .content p{
+        font-size: 1.7rem;
+    }
     #container{
         text-align: center;
     }
     .basic .box-container .box{
-        max-height: 22rem;
         min-width: 40rem;
     }
+    .basic .box-container .box .content{
+        flex: 1 1 30rem;
+    }
     .basic .box-container .box img{
-        object-fit: cover;
-        width: 40%;
+        width: 25%;
+        height: 18rem;
+        flex: 1 1 20rem;
     }
     .basic .box-container .box .content h3{
         font-size: 1.8rem;
@@ -555,7 +565,7 @@ header a.conbtn:hover{
         margin-left: .2rem;
     }
     .basic .box-container .box .content p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin: 0;
         padding: 0;
     }
