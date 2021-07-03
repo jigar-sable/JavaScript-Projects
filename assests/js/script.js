@@ -9,10 +9,10 @@ $(document).ready(function(){
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
-        if($(window).scrollTop()>0){
-            $('.scroll-top').show();
+        if(window.scrollY>60){
+            document.querySelector('#scroll-top').classList.add('active');
         }else{
-            $('.scroll-top').hide();
+            document.querySelector('#scroll-top').classList.remove('active');
         }
 
         // scroll spy
@@ -40,21 +40,6 @@ $(document).ready(function(){
 });
 
 // work in progressssss....
-/**
-   * Animation on scroll
-   */
- function aos_init() {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
-    });
-  }
-  window.addEventListener('load', () => {
-    aos_init();
-  });
-
 
 
 // text animation
@@ -64,7 +49,8 @@ var _CONTENT = [
     "Build a JavaScript Age Calculator.", 
     "Build a JavaScript Clock.",
     "Build a JavaScript Issue Tracker.",
-	"Build a JavaScript Password Generator.",
+	"Build a Password Generator.",
+    "Build a JavaScript Weather API.",
     "So Let's Get Started!"
 ];
 

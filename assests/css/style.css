@@ -735,3 +735,24 @@ header a.conbtn:hover{
 }
 }
 /* footer made with love */
+
+
+
+/* scroll top starts */
+#scroll-top{
+  position: fixed;
+  top: -140%;
+  right: 2rem;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  background: #ffae00;
+  color: rgb(13, 0, 44);
+  border-radius: .5rem;
+  transition: .5s ease-in;
+  z-index: 1000;
+  text-decoration: none;
+}
+#scroll-top.active{
+  top: calc(100% - 12rem);
+}
+/* scroll top ends */
