@@ -296,7 +296,7 @@ header a.conbtn:hover{
 
 /* basic section starts */
 .basic{
-    background: #e5ecfb;
+    background: #e6ddfa;
     padding-bottom: 2rem;
 }
 .basic .heading{
@@ -384,7 +384,7 @@ header a.conbtn:hover{
 
 /* apibased section starts */
 .apibased{
-    background: rgb(200, 247, 200);
+    background: rgb(206, 252, 206);
     min-height: 115vh;
 }
 .apibased .heading{
@@ -418,10 +418,10 @@ header a.conbtn:hover{
   height: 100%;
   width:100%;
   position: absolute;
-  top:85%; left:0;
+  top:-85%; left:0;
   background:rgba(255, 255, 255, 1);
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   transition: .2s ease-in;
 }
 .apibased .box-container .box .content .tag{
@@ -439,7 +439,10 @@ header a.conbtn:hover{
   font-weight: 600;
 }
 .apibased .box-container .box:hover .content{
-  top: 25%;
+  top: -40%;
+}
+.apibased .box-container .box:hover .content .tag{
+    display: none;
 }
 .apibased .desc {
   margin: 2rem;
@@ -700,8 +703,7 @@ header a.conbtn:hover{
       top: 120%;
     }
   }
-  /* Footer  */
-
+/* Footer  */
 
 /* footer made with love */
 .site-footer span{
@@ -735,8 +737,6 @@ header a.conbtn:hover{
 }
 }
 /* footer made with love */
-
-
 
 /* scroll top starts */
 #scroll-top{
