@@ -1,5 +1,35 @@
 [
     {
+        "name":"WeKeep Notes",
+        "desc":"We Keep is Google Keep Clone. Stores Notes in LocalStorage",
+        "meta":"wekeep"
+    },
+    {
+        "name":"Songify Music Player",
+        "desc":"Music Player with play, pause, playlist and all major features.",
+        "meta":"tempconvert"
+    },
+    {
+        "name":"Quiz Web App",
+        "desc":"Simple quiz application. tailwindCSS framework.",
+        "meta":"tempconvert"
+    },
+    {
+        "name":"Temperature Converter",
+        "desc":"Temperature converter celsius to kelvin and fahrenhiet live.",
+        "meta":"tempconvert"
+    },
+    {
+        "name":"Words Counter",
+        "desc":"Words and character counter. Live Counter JavaScript Project.",
+        "meta":"wordcount"
+    },
+    {
+        "name":"Simple Stopwatch",
+        "desc":"Simple stopwatch with start stop and reset features.",
+        "meta":"stopwatch"
+    },
+    {
         "name":"Basic Percentage Calc",
         "desc":"Percentage And Grade Calculator Based On The Marks Enter By The User.",
         "meta":"percentcalc"
