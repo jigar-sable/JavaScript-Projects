@@ -3,7 +3,7 @@ const addBtn = document.querySelector(".inputf button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".footer button");
 
-inputBox.onkeyup = (e)=>{
+inputBox.onkeyup = (e) => {
   let userEnteredValue = inputBox.value; 
   if(userEnteredValue.trim() != 0){ 
     addBtn.classList.add("active");
@@ -16,7 +16,7 @@ inputBox.onkeyup = (e)=>{
 }
 showTodos();
 
-addBtn.onclick = ()=>{ 
+addBtn.onclick = () => { 
   let userEnteredValue = inputBox.value; 
   let getLocalStorageData = localStorage.getItem("Todos");
   if(getLocalStorageData == null){ 

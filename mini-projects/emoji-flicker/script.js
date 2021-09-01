@@ -1,7 +1,6 @@
 const closeface = document.querySelector('.closed');
 const openface = document.querySelector('.open');
 
-
 //event listener
 closeface.addEventListener('click', () => {
     if(openface.classList.contains('open')){
