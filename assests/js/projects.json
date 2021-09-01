@@ -1,0 +1,47 @@
+[
+    {
+        "name":"Basic Percentage Calc",
+        "desc":"Percentage And Grade Calculator Based On The Marks Enter By The User.",
+        "meta":"percentcalc"
+    },
+    {
+        "name":"Simple Calculator",
+        "desc":"Simple Operations Calculator Based On The Two User Inputs.",
+        "meta":"twonumcalc"
+    },
+    {
+        "name":"Todo List",
+        "desc":"Simple Todo List Webapp With Modern UI And Glassmorphism.",
+        "meta":"todo"
+    },
+    {
+        "name":"Age Calculator",
+        "desc":"Calculates The Age Of The User. Wishes Too On Birthday.",
+        "meta":"agecalc"
+    },
+    {
+        "name":"Password Generator",
+        "desc":"A Basic Password Generator As Per The User Selected Criteria.",
+        "meta":"pwdgen"
+    },
+    {
+        "name":"Issue Tracker",
+        "desc":"Assign Issue With The Auto Generated Id By Using ChanceJS. Uses LocalStorage.",
+        "meta":"issuetracker"
+    },
+    {
+        "name":"Simple Calculator",
+        "desc":"A Simple Caculator Built Using JQuery With Glassmorphism.",
+        "meta":"basic-calc"
+    },
+    {
+        "name":"JavaScript Calculator",
+        "desc":"A Simple Caculator With TiltJS Effects And Glassmorphism.",
+        "meta":"calc-tilt"
+    },
+    {
+        "name":"Neomorphism Clock",
+        "desc":"Basic Neomorphism Clock With Hour, Min, Sec With Light And Dark Mode. Tilt Effect.",
+        "meta":"neoclock"
+    }
+]

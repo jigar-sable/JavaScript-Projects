@@ -39,7 +39,32 @@ $(document).ready(function(){
     })
 });
 
-// work in progressssss....
+// fetch projects
+const projectsContainer = document.getElementById('projects-container');
+let project = '';
+
+fetch('/assests/js/projects.json')
+.then(res => res.json())
+.then(projects => {
+    // console.log(projects);
+
+    projects.forEach(proj => {
+        console.log(proj);
+    project += `
+    <div class="box">
+        <img src="https://raw.githubusercontent.com/jigar-sable/JavaScript-Projects/main/assests/projects-img/${proj.meta}.PNG" alt="">
+        <div class="content">
+        <h3>${proj.name}</h3>
+        <p>${proj.desc}</p>
+        <div class="btns">
+            <a href="projects/${proj.meta}" class="btn"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/projects/${proj.link}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+        </div>
+        </div>
+    </div>`;
+    }); 
+    projectsContainer.innerHTML = project;
+});
 
 
 // text animation
