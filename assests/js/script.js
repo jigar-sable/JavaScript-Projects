@@ -43,7 +43,7 @@ $(document).ready(function(){
 const projectsContainer = document.getElementById('projects-container');
 let project = '';
 
-fetch('/assests/js/projects.json')
+fetch('https://jigar-sable.github.io/JavaScript-Projects/assests/js/projects.json')
 .then(res => res.json())
 .then(projects => {
     // console.log(projects);
