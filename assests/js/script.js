@@ -47,7 +47,7 @@ fetch('https://jigar-sable.github.io/JavaScript-Projects/assests/js/projects.jso
 .then(res => res.json())
 .then(projects => {
     // console.log(projects);
-
+    
     projects.forEach(proj => {
         console.log(proj);
     project += `
