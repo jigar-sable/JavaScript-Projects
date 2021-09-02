@@ -743,14 +743,15 @@ header a.conbtn:hover{
   position: fixed;
   top: -140%;
   right: 2rem;
-  padding: .5rem 1rem;
+  padding: 1rem 1.5rem;
   font-size: 2rem;
   background: #ffae00;
   color: rgb(13, 0, 44);
-  border-radius: .5rem;
+  border-radius: 50%;
   transition: .5s ease-in;
   z-index: 1000;
   text-decoration: none;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .3);
 }
 #scroll-top.active{
   top: calc(100% - 12rem);

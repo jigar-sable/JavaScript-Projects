@@ -49,7 +49,7 @@ fetch('https://jigar-sable.github.io/JavaScript-Projects/assests/js/projects.jso
     // console.log(projects);
     
     projects.forEach(proj => {
-        console.log(proj);
+        // console.log(proj);
     project += `
     <div class="box">
         <img src="https://raw.githubusercontent.com/jigar-sable/JavaScript-Projects/main/assests/projects-img/${proj.meta}.PNG" alt="">
