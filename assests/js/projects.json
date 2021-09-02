@@ -2,7 +2,7 @@
     {
         "name":"Quiz Web App",
         "desc":"Simple quiz application. tailwindCSS framework.",
-        "meta":"tempconvert"
+        "meta":"quizapp"
     },
     {
         "name":"Temperature Converter",
