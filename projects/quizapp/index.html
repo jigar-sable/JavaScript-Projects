@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App | JavaScript</title>
+    <link rel="shortcut icon" href="./assests/fav.png" type="image/x-icon">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head> 
+<body class="h-screen flex items-center justify-center bg-gray-800" style="font-family: 'Montserrat', sans-serif;">
+
+    <div class="container bg-gray-900 px-8 py-6 w-full md:w-1/2 lg:w-2/6 m-4 md:m-0 rounded-md text-white shadow-xl">
+
+        <div id="quiz-wrapper">
+            <h2 class="question text-2xl font-semibold text-yellow-500 mb-4">1. Question</h2>
+            <ul>
+                <li class="py-2 text-xl flex gap-3 items-center">
+                    <input class="answer" type="radio" name="answer" id="ans1">
+                    <label for="ans1" id="opt1" class="cursor-pointer">Option 1</label>
+                </li>
+    
+                <li class="py-2 text-xl flex gap-3 items-center">
+                    <input class="answer" type="radio" name="answer" id="ans2">
+                    <label for="ans2" id="opt2" class="cursor-pointer">Option 2</label>
+                </li>
+    
+                <li class="py-2 text-xl flex gap-3 items-center">
+                    <input class="answer" type="radio" name="answer" id="ans3">
+                    <label for="ans3" id="opt3" class="cursor-pointer">Option 3</label>
+                </li>
+    
+                <li class="py-2 text-xl flex gap-3 items-center">
+                    <input class="answer" type="radio" name="answer" id="ans4">
+                    <label for="ans4" id="opt4" class="cursor-pointer">Option 4</label>
+                </li>
+            </ul>
+    
+            <button class="p-2 mt-4 w-full bg-purple-800 text-lg text-white rounded hover:bg-purple-900 shadow-lg transition duration-75" id="submit">Submit</button>
+        </div>
+
+        <div id="result" class="flex flex-col justify-center items-center bg-gren-500 py-2 px-8">
+            <!-- <span class="text-3xl font-semibold">Your Score Is : <span class="text-yellow-500">4/5</span> </span>
+            <button class="p-3 text-xl mt-4 w-full bg-yellow-600 text-white rounded hover:bg-yellow-700 transition duration-75" onclick="location.reload()">Restart</button> -->
+        </div>
+    </div>
+
+    <script src="./assests/quizes.js"></script>
+    <script src="./assests/script.js"></script>
+</body>
+</html>

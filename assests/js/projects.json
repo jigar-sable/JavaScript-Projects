@@ -1,5 +1,10 @@
 [
     {
+        "name":"Quiz Web App",
+        "desc":"Simple quiz application. tailwindCSS framework.",
+        "meta":"tempconvert"
+    },
+    {
         "name":"Temperature Converter",
         "desc":"Temperature converter celsius to kelvin and fahrenhiet live.",
         "meta":"tempconvert"
