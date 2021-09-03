@@ -1,11 +1,5 @@
 let songs = [
     {
-        name: "Anonymous Music",
-        artist: "Unknown",
-        img: "cover1",
-        src: "song1"
-    },
-    {
         name: "Flares",
         artist: "NIVIRO",
         img: "cover8",
@@ -22,6 +16,12 @@ let songs = [
         artist: "Diamond Eyes",
         img: "cover3",
         src: "song3"
+    },
+    {
+        name: "Anonymous Music",
+        artist: "Unknown",
+        img: "cover1",
+        src: "song1"
     },
     {
         name: "Bittersweet",
