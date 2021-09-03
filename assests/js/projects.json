@@ -1,5 +1,10 @@
 [
     {
+        "name":"Songify Music Player",
+        "desc":"Music Player with play, pause, playlist and all major features. SASS/SCSS",
+        "meta":"songify"
+    },
+    {
         "name":"Quiz Web App",
         "desc":"Simple quiz application. tailwindCSS framework.",
         "meta":"quizapp"
