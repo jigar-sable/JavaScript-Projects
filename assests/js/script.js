@@ -58,7 +58,7 @@ fetch('https://jigar-sable.github.io/JavaScript-Projects/assests/js/projects.jso
         <p>${proj.desc}</p>
         <div class="btns">
             <a href="projects/${proj.meta}" class="btn"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/projects/${proj.link}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            <a href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/projects/${proj.meta}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
         </div>
         </div>
     </div>`;
