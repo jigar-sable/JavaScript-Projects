@@ -2,18 +2,13 @@
 
 [Visit Now](https://jigar-sable.github.io/JavaScript-Projects/) 🚀
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/jigar-sable/JavaScript-Projects)&nbsp;
-![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=brightgreen&style=flat&logo=github)&nbsp;
 [![javascript-projects](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?color=blue)](https://jigar-sable.github.io/JavaScript-Projects/)&nbsp;
 [![repo-size](https://img.shields.io/github/repo-size/jigar-sable/JavaScript-Projects)](https://github.com/jigar-sable/JavaScript-Projects)
-
-
-
 
 ## Overview
 
 JavaScript Projects Site includes major projects working on single site.
-Made with basic HTML, CSS, JavaScript and jQuery.
+Made with basic HTML, CSS, TailwindCSS, SCSS, JavaScript and jQuery.
 
 ## Tech Stack
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)](https://github.com/jigar-sable/JavaScript-Projects/search?l=html)&nbsp;
