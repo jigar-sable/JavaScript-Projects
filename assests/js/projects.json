@@ -1,5 +1,10 @@
 [
     {
+        "name":"WeKeep Notes",
+        "desc":"We keep notes saver. Stores Notes in LocalStorage. TailwindCSS",
+        "meta":"wekeep"
+    },
+    {
         "name":"Songify Music Player",
         "desc":"Music Player with play, pause, playlist and all major features. SASS/SCSS",
         "meta":"songify"
