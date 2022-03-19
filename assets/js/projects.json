@@ -61,13 +61,8 @@
     },
     {
         "name":"Simple Calculator",
-        "desc":"A Simple Caculator Built Using JQuery With Glassmorphism.",
+        "desc":"A Simple Caculator Built Using JQuery.",
         "meta":"basic-calc"
-    },
-    {
-        "name":"JavaScript Calculator",
-        "desc":"A Simple Caculator With TiltJS Effects And Glassmorphism.",
-        "meta":"calc-tilt"
     },
     {
         "name":"Neomorphism Clock",

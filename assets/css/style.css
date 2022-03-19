@@ -385,7 +385,7 @@ header a.conbtn:hover{
 /* apibased section starts */
 .apibased{
     background: rgb(206, 252, 206);
-    min-height: 115vh;
+    min-height: 70vh;
 }
 .apibased .heading{
     text-align: center;

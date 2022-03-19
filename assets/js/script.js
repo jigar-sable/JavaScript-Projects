@@ -43,7 +43,7 @@ $(document).ready(function(){
 const projectsContainer = document.getElementById('projects-container');
 let project = '';
 
-fetch('https://jigar-sable.github.io/JavaScript-Projects/assests/js/projects.json')
+fetch('./assets/js/projects.json')
 .then(res => res.json())
 .then(projects => {
     // console.log(projects);
@@ -52,7 +52,7 @@ fetch('https://jigar-sable.github.io/JavaScript-Projects/assests/js/projects.jso
         // console.log(proj);
     project += `
     <div class="box">
-        <img src="https://raw.githubusercontent.com/jigar-sable/JavaScript-Projects/main/assests/projects-img/${proj.meta}.PNG" alt="">
+        <img src="./assets/projects-img/${proj.meta}.png" alt="project">
         <div class="content">
         <h3>${proj.name}</h3>
         <p>${proj.desc}</p>

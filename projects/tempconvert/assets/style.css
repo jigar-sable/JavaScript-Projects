@@ -13,11 +13,6 @@ body {
     min-height: 100vh;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
-
-    /* animated background */
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #3532e6, #75df38, #dd2476, #ffbb00, #df38df);
-	background-size: 1000% 1000%;
-	animation: gradientEffect 35s ease infinite; */
 }
 h1 {
     font-size: 2.5rem;
@@ -66,16 +61,3 @@ h1 {
         font-size: 52%;
     }
 }
-
-/* animated gradient effect */
-/* @keyframes gradientEffect {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */

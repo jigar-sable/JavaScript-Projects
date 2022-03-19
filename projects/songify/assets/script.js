@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
 const loadMusic = (indexNum) => {
     musicName.textContent = songs[indexNum - 1].name;
     musicArtist.textContent = songs[indexNum - 1].artist;
-    musicImg.src = `./assests/images/${songs[indexNum - 1].img}.jpg`
+    musicImg.src = `./assets/images/${songs[indexNum - 1].img}.jpg`
     mainAudio.src = `https://www.mboxdrive.com/${songs[indexNum - 1].src}.mp3`
 }
 
